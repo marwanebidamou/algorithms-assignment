@@ -28,7 +28,7 @@ public class Main {
         {
             var count = treeMap.get(keys[i]);
 
-            if (checkArraySize(countNum))
+            if (countNum==3)
             {
                 break;
             }
@@ -41,7 +41,7 @@ public class Main {
             {
                 for (int j = 0; j < count; j++)
                 {
-                    if (checkArraySize(countNum))
+                    if (countNum==3)
                     {
                         break;
                     }
@@ -57,10 +57,5 @@ public class Main {
         System.out.println("Emperical Time in nano seconds: " + empericalTime);
 
         return array;
-    }
-
-    public static boolean checkArraySize(int count)
-    {
-        return count == 3;
     }
 }
