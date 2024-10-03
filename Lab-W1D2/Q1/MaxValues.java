@@ -2,6 +2,8 @@ package Q1;
 
 class MaxValues {
     public static int[] getMaxValues(int[] arr) {
+        var startTime = System.nanoTime();
+
         if (arr == null || arr.length == 0) {
             return null;
         }
@@ -33,6 +35,11 @@ class MaxValues {
                 max3 = arr[i];
             }
         }
+
+        var endTime = System.nanoTime();
+
+        var empericalTime = endTime - startTime;
+        System.out.println("Emperical Time in nano seconds: " + empericalTime);
 
         return new int[]{max1, max2, max3};
     }

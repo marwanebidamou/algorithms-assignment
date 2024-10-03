@@ -11,7 +11,8 @@ public class Main {
     }
 
     public static int[] findThirdMax(int[] a) {
-        var startTime = System.currentTimeMillis();
+        var startTime = System.nanoTime();
+
         var treeMap = new TreeMap<Integer, Integer>();
 
         for (int i = 0; i < a.length; i++)
@@ -50,10 +51,10 @@ public class Main {
             }
         }
 
-        var endTime = System.currentTimeMillis();
+        var endTime = System.nanoTime();
 
         var empericalTime = endTime - startTime;
-        System.out.println("Emperical Time in miliseconds: " + empericalTime);
+        System.out.println("Emperical Time in nano seconds: " + empericalTime);
 
         return array;
     }
